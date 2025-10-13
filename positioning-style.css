@@ -1,0 +1,22 @@
+.box{
+  width: 100px;
+  height: 100px;
+}
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: yellow;
+}
+.blue{
+  background-color: blue;
+}
+.locate{
+  position: relative; /*현재 위치 기준*/
+  /* position: static; */ /*기본 값*/
+  /* position: absolute; */ /*부모(relative, absolute, fixed) 태그 기준*/
+  /* position: fixed; */ /*보이는 화면 기준*/
+  /* position: sticky; */ /*스크롤 이동 시에 원하는 위치에 고정*/
+  left: 30px;
+  top: 30px;
+}
