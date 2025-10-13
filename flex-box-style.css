@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.mother{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  /* justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between; */
+  height: 100vh;
+  /* align-items: flex-end; */
+}
+.child{
+  background-color: blueviolet;
+  width: 100px;
+  height: 100px;
+}
+
+.container-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.box-1{
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+.box-2{
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+.box-3{
+  width: 350px;
+  height: 150px;
+  color: white;
+}
+.black{
+  background-color: black;
+}
+.gray{
+  background-color: gray;
+}
+
+.container1{
+  margin: -1px;
+  padding: 0;
+  width: 50%;
+  height: 500px;
+  border: 1px solid blue;
+  position: relative;
+}
+.container1 > .box-1:nth-child(2){
+  position: absolute;
+  top: 0px;
+  right: 110px;
+}
+.container1 > .box-1:nth-child(3){
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.container2{
+  margin: -1px ;
+  padding: 0;
+  width: 50%;
+  height: 500px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.container2 > .box-1:nth-child(2){
+  align-self: center;
+}
+.container2 > .box-1:nth-child(3){
+  align-self: flex-end;
+}
+
+.container3{
+  margin: -1px;
+  padding: 0;
+  width: 50%;
+  height: 480px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.container3 > .box-2{
+  position: relative;
+}
+.container3 > .box-2 > .box-1{
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.container4{
+  margin: -1px;
+  padding: 0;
+  width: 50%;
+  height: 500px;
+  border: 1px solid blue;
+  position: relative;
+}
+.container4 > .box-1:nth-child(2){
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.container5{
+  margin: -1px;
+  padding: 0;
+  width: 50%;
+  height: 500px;
+  border: 1px solid blue;
+  position: relative;
+}
+.container5 > .box-3{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.container5 > .box-3 > .box-1:nth-child(1){
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.container5 > .box-3 > .box-1:nth-child(2){
+  position: absolute;
+  right: 0;
+  top: 0;
+}
