@@ -1,0 +1,65 @@
+.navbar-brand{
+  font-size: 2rem;
+}
+.navbar{
+  padding: 8px 32px;
+}
+.btn-outline-success{
+  color: chocolate;
+  border-color: chocolate;
+}
+.btn-outline-success:hover{
+  background-color: chocolate;
+  color: white;
+  border-color: white;
+}
+footer{
+  background-color: #19110b;
+  color: white;
+  font-size: 14px;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+.first-line{
+  border-bottom: 1px solid #392d23;
+}
+.moblie-line{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .second-line{
+    margin-top: -1.5rem;
+  }
+  .second-line > .col{
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .first-line{
+    text-align: center;
+  }
+  .second-line{
+    margin: 0 3rem;
+    margin-top: -1.5rem;
+    border-bottom: 1px solid #392d23;
+  }
+  .second-line > .col{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-top: 1.5rem;
+  }
+  .second-line > .col:nth-child(1){
+    display: none;
+  }
+  .moblie-line{
+    display: block;
+  }
+}
